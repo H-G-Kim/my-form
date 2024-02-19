@@ -34,6 +34,19 @@ const handleInputChange =(e) =>{
   return (
     <div className="App">
         <form onSubmit={handleInputChange}>
+        <Label firstNameLabel ="First Name" lastNameLabel ="Last Name" />
+      </form>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+/*
+  <div className="App">
+        <form onSubmit={handleInputChange}>
         <label>
           First Name:
           <input type="text" value={fname} name="firstname" onChange ={handleFnameChange} />
@@ -59,6 +72,6 @@ const handleInputChange =(e) =>{
       </form>
     </div>
   );
-}
 
-export default App;
+
+*/

@@ -36,3 +36,121 @@
     transform: rotate(360deg);
   }
 }
+App {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Remove default blue outline on focus */
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #3CBC8D;
+}
+
+/* Style submit and reset buttons */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #3CBC8D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Add hover effect to buttons */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #2b8a67;
+}
+
+/* Center the buttons */
+input[type="submit"],
+input[type="reset"] {
+    display: block;
+    margin: 0 auto;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  /* Use flexbox to evenly distribute form elements */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Remove default blue outline on focus */
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: #3CBC8D;
+}
+
+/* Style submit and reset buttons */
+input[type="submit"],
+input[type="reset"] {
+  background-color: #3CBC8D;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Add hover effect to buttons */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #2b8a67;
+}
+
+/* Center the buttons */
+input[type="submit"],
+input[type="reset"] {
+  display: block;
+  margin: 0 auto;
+}
