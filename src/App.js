@@ -32,46 +32,38 @@ const handleInputChange =(e) =>{
 }
 
   return (
+ 
+
     <div className="App">
-        <form onSubmit={handleInputChange}>
-        <Label firstNameLabel ="First Name" lastNameLabel ="Last Name" />
-      </form>
-    </div>
-  );
+    <form onSubmit={handleInputChange}>
+    <label>
+      First Name:
+      <input type="text" value={fname} name="firstname" onChange ={handleFnameChange} />
+    </label>
+    <label>
+      Last Name:
+      <input type="text" value={lname} name="lastname" onChange ={handleLnameChange}/>
+    </label>
+    <label>
+      Age:
+      <input type="number" value={age} name="age" onChange ={handleAgeChange}/>
+    </label>
+    <label>
+      Gender:
+      <select  onChange ={handleGenderChange} value={gender}>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </label>
+    <input type="submit" value="Submit"  />
+    <input type="reset" value="reset"  />
+  </form>
+</div>
+);
 }
 
 export default App;
 
 
 
-/*
-  <div className="App">
-        <form onSubmit={handleInputChange}>
-        <label>
-          First Name:
-          <input type="text" value={fname} name="firstname" onChange ={handleFnameChange} />
-        </label>
-        <label>
-          Last Name:
-          <input type="text" value={lname} name="lastname" onChange ={handleLnameChange}/>
-        </label>
-        <label>
-          Age:
-          <input type="number" value={age} name="age" onChange ={handleAgeChange}/>
-        </label>
-        <label>
-          Gender:
-          <select  onChange ={handleGenderChange} value={gender}>
-            {gender}
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-          </select>
-        </label>
-        <input type="submit" value="Submit"  />
-        <input type="reset" value="reset"  />
-      </form>
-    </div>
-  );
 
-
-*/
